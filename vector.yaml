@@ -1,0 +1,22 @@
+sources:
+  nginx_logs:
+    type: file
+    include: ["/var/log/nginx/access.log"]
+
+transforms:
+  # VictoriaLogs ждет newline-delimited JSON. 
+  # В Vector есть готовый формат для этого:
+  to_json:
+    type: remap
+    inputs: [nginx_logs]
+    source: |
+      . = parse_common_log!(.message)
+      .service = "nginx"
+
+sinks:
+  to_victorialogs:
+    type: http
+    inputs: [to_json]
+    uri: http://victorialogs:9428/insert/jsonline
+    encoding:
+      codec: json

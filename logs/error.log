@@ -1,0 +1,161 @@
+2026/03/23 15:48:56 [notice] 1#1: using the "epoll" event method
+2026/03/23 15:48:56 [notice] 1#1: nginx/1.29.6
+2026/03/23 15:48:56 [notice] 1#1: built by gcc 15.2.0 (Alpine 15.2.0) 
+2026/03/23 15:48:56 [notice] 1#1: OS: Linux 5.15.153.1-microsoft-standard-WSL2
+2026/03/23 15:48:56 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2026/03/23 15:48:56 [notice] 1#1: start worker processes
+2026/03/23 15:48:56 [notice] 1#1: start worker process 31
+2026/03/23 15:48:56 [notice] 1#1: start worker process 32
+2026/03/23 15:48:56 [notice] 1#1: start worker process 33
+2026/03/23 15:48:56 [notice] 1#1: start worker process 34
+2026/03/23 15:48:56 [notice] 1#1: start worker process 35
+2026/03/23 15:48:56 [notice] 1#1: start worker process 36
+2026/03/23 15:48:56 [notice] 1#1: start worker process 37
+2026/03/23 15:48:56 [notice] 1#1: start worker process 38
+2026/03/23 15:48:56 [notice] 1#1: start worker process 39
+2026/03/23 15:48:56 [notice] 1#1: start worker process 40
+2026/03/23 15:48:56 [notice] 1#1: start worker process 41
+2026/03/23 15:48:56 [notice] 1#1: start worker process 42
+2026/03/23 15:48:56 [notice] 1#1: start worker process 43
+2026/03/23 15:48:56 [notice] 1#1: start worker process 44
+2026/03/23 15:48:56 [notice] 1#1: start worker process 45
+2026/03/23 15:48:56 [notice] 1#1: start worker process 46
+2026/03/23 15:57:32 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2026/03/23 15:57:32 [notice] 31#31: gracefully shutting down
+2026/03/23 15:57:32 [notice] 40#40: gracefully shutting down
+2026/03/23 15:57:32 [notice] 32#32: gracefully shutting down
+2026/03/23 15:57:32 [notice] 33#33: gracefully shutting down
+2026/03/23 15:57:32 [notice] 34#34: gracefully shutting down
+2026/03/23 15:57:32 [notice] 35#35: gracefully shutting down
+2026/03/23 15:57:32 [notice] 36#36: gracefully shutting down
+2026/03/23 15:57:32 [notice] 37#37: gracefully shutting down
+2026/03/23 15:57:32 [notice] 38#38: gracefully shutting down
+2026/03/23 15:57:32 [notice] 39#39: gracefully shutting down
+2026/03/23 15:57:32 [notice] 41#41: gracefully shutting down
+2026/03/23 15:57:32 [notice] 42#42: gracefully shutting down
+2026/03/23 15:57:32 [notice] 31#31: exiting
+2026/03/23 15:57:32 [notice] 43#43: gracefully shutting down
+2026/03/23 15:57:32 [notice] 44#44: gracefully shutting down
+2026/03/23 15:57:32 [notice] 45#45: gracefully shutting down
+2026/03/23 15:57:32 [notice] 46#46: gracefully shutting down
+2026/03/23 15:57:32 [notice] 40#40: exiting
+2026/03/23 15:57:32 [notice] 32#32: exiting
+2026/03/23 15:57:32 [notice] 40#40: exit
+2026/03/23 15:57:32 [notice] 33#33: exiting
+2026/03/23 15:57:32 [notice] 34#34: exiting
+2026/03/23 15:57:32 [notice] 35#35: exiting
+2026/03/23 15:57:32 [notice] 36#36: exiting
+2026/03/23 15:57:32 [notice] 37#37: exiting
+2026/03/23 15:57:32 [notice] 38#38: exiting
+2026/03/23 15:57:32 [notice] 39#39: exiting
+2026/03/23 15:57:32 [notice] 38#38: exit
+2026/03/23 15:57:32 [notice] 41#41: exiting
+2026/03/23 15:57:32 [notice] 42#42: exiting
+2026/03/23 15:57:32 [notice] 31#31: exit
+2026/03/23 15:57:32 [notice] 43#43: exiting
+2026/03/23 15:57:32 [notice] 44#44: exiting
+2026/03/23 15:57:32 [notice] 45#45: exiting
+2026/03/23 15:57:32 [notice] 46#46: exiting
+2026/03/23 15:57:32 [notice] 32#32: exit
+2026/03/23 15:57:32 [notice] 33#33: exit
+2026/03/23 15:57:32 [notice] 34#34: exit
+2026/03/23 15:57:32 [notice] 35#35: exit
+2026/03/23 15:57:32 [notice] 36#36: exit
+2026/03/23 15:57:32 [notice] 37#37: exit
+2026/03/23 15:57:32 [notice] 39#39: exit
+2026/03/23 15:57:32 [notice] 41#41: exit
+2026/03/23 15:57:32 [notice] 42#42: exit
+2026/03/23 15:57:32 [notice] 43#43: exit
+2026/03/23 15:57:32 [notice] 44#44: exit
+2026/03/23 15:57:32 [notice] 45#45: exit
+2026/03/23 15:57:32 [notice] 46#46: exit
+2026/03/23 15:57:32 [notice] 1#1: signal 17 (SIGCHLD) received from 42
+2026/03/23 15:57:32 [notice] 1#1: worker process 35 exited with code 0
+2026/03/23 15:57:32 [notice] 1#1: worker process 36 exited with code 0
+2026/03/23 15:57:32 [notice] 1#1: worker process 37 exited with code 0
+2026/03/23 15:57:32 [notice] 1#1: worker process 38 exited with code 0
+2026/03/23 15:57:32 [notice] 1#1: worker process 42 exited with code 0
+2026/03/23 15:57:32 [notice] 1#1: worker process 43 exited with code 0
+2026/03/23 15:57:32 [notice] 1#1: worker process 44 exited with code 0
+2026/03/23 15:57:32 [notice] 1#1: worker process 45 exited with code 0
+2026/03/23 15:57:32 [notice] 1#1: worker process 46 exited with code 0
+2026/03/23 15:57:32 [notice] 1#1: signal 29 (SIGIO) received
+2026/03/23 15:57:32 [notice] 1#1: signal 17 (SIGCHLD) received from 35
+2026/03/23 15:57:32 [notice] 1#1: signal 17 (SIGCHLD) received from 33
+2026/03/23 15:57:32 [notice] 1#1: worker process 32 exited with code 0
+2026/03/23 15:57:32 [notice] 1#1: worker process 33 exited with code 0
+2026/03/23 15:57:32 [notice] 1#1: worker process 40 exited with code 0
+2026/03/23 15:57:32 [notice] 1#1: worker process 41 exited with code 0
+2026/03/23 15:57:32 [notice] 1#1: signal 29 (SIGIO) received
+2026/03/23 15:57:32 [notice] 1#1: signal 17 (SIGCHLD) received from 32
+2026/03/23 15:57:32 [notice] 1#1: signal 17 (SIGCHLD) received from 34
+2026/03/23 15:57:32 [notice] 1#1: worker process 31 exited with code 0
+2026/03/23 15:57:32 [notice] 1#1: worker process 34 exited with code 0
+2026/03/23 15:57:32 [notice] 1#1: worker process 39 exited with code 0
+2026/03/23 15:57:32 [notice] 1#1: exit
+2026/03/23 15:57:45 [notice] 7#7: using the "epoll" event method
+2026/03/23 15:57:45 [notice] 7#7: nginx/1.29.6
+2026/03/23 15:57:45 [notice] 7#7: built by gcc 15.2.0 (Alpine 15.2.0) 
+2026/03/23 15:57:45 [notice] 7#7: OS: Linux 5.15.153.1-microsoft-standard-WSL2
+2026/03/23 15:57:45 [notice] 7#7: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2026/03/23 15:57:45 [notice] 8#8: start worker processes
+2026/03/23 15:57:45 [notice] 8#8: start worker process 9
+2026/03/23 15:57:45 [notice] 8#8: start worker process 10
+2026/03/23 15:57:45 [notice] 8#8: start worker process 11
+2026/03/23 15:57:45 [notice] 8#8: start worker process 12
+2026/03/23 15:57:45 [notice] 8#8: start worker process 13
+2026/03/23 15:57:45 [notice] 8#8: start worker process 14
+2026/03/23 15:57:45 [notice] 8#8: start worker process 15
+2026/03/23 15:57:45 [notice] 8#8: start worker process 16
+2026/03/23 15:57:45 [notice] 8#8: start worker process 17
+2026/03/23 15:57:45 [notice] 8#8: start worker process 18
+2026/03/23 15:57:45 [notice] 8#8: start worker process 19
+2026/03/23 15:57:45 [notice] 8#8: start worker process 20
+2026/03/23 15:57:45 [notice] 8#8: start worker process 21
+2026/03/23 15:57:45 [notice] 8#8: start worker process 22
+2026/03/23 15:57:45 [notice] 8#8: start worker process 23
+2026/03/23 15:57:45 [notice] 8#8: start worker process 24
+2026/03/23 16:04:18 [notice] 7#7: using the "epoll" event method
+2026/03/23 16:04:18 [notice] 7#7: nginx/1.29.6
+2026/03/23 16:04:18 [notice] 7#7: built by gcc 15.2.0 (Alpine 15.2.0) 
+2026/03/23 16:04:18 [notice] 7#7: OS: Linux 5.15.153.1-microsoft-standard-WSL2
+2026/03/23 16:04:18 [notice] 7#7: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2026/03/23 16:04:18 [notice] 8#8: start worker processes
+2026/03/23 16:04:18 [notice] 8#8: start worker process 9
+2026/03/23 16:04:18 [notice] 8#8: start worker process 10
+2026/03/23 16:04:18 [notice] 8#8: start worker process 11
+2026/03/23 16:04:18 [notice] 8#8: start worker process 12
+2026/03/23 16:04:18 [notice] 8#8: start worker process 13
+2026/03/23 16:04:18 [notice] 8#8: start worker process 14
+2026/03/23 16:04:18 [notice] 8#8: start worker process 15
+2026/03/23 16:04:18 [notice] 8#8: start worker process 16
+2026/03/23 16:04:18 [notice] 8#8: start worker process 17
+2026/03/23 16:04:18 [notice] 8#8: start worker process 18
+2026/03/23 16:04:18 [notice] 8#8: start worker process 19
+2026/03/23 16:04:18 [notice] 8#8: start worker process 20
+2026/03/23 16:04:18 [notice] 8#8: start worker process 21
+2026/03/23 16:04:18 [notice] 8#8: start worker process 22
+2026/03/23 16:04:18 [notice] 8#8: start worker process 23
+2026/03/23 16:04:18 [notice] 8#8: start worker process 24
+2026/03/23 16:05:33 [notice] 7#7: using the "epoll" event method
+2026/03/23 16:05:33 [notice] 7#7: nginx/1.29.6
+2026/03/23 16:05:33 [notice] 7#7: built by gcc 15.2.0 (Alpine 15.2.0) 
+2026/03/23 16:05:33 [notice] 7#7: OS: Linux 5.15.153.1-microsoft-standard-WSL2
+2026/03/23 16:05:33 [notice] 7#7: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2026/03/23 16:05:33 [notice] 8#8: start worker processes
+2026/03/23 16:05:33 [notice] 8#8: start worker process 9
+2026/03/23 16:05:33 [notice] 8#8: start worker process 10
+2026/03/23 16:05:33 [notice] 8#8: start worker process 11
+2026/03/23 16:05:33 [notice] 8#8: start worker process 12
+2026/03/23 16:05:33 [notice] 8#8: start worker process 13
+2026/03/23 16:05:33 [notice] 8#8: start worker process 14
+2026/03/23 16:05:33 [notice] 8#8: start worker process 15
+2026/03/23 16:05:33 [notice] 8#8: start worker process 16
+2026/03/23 16:05:33 [notice] 8#8: start worker process 17
+2026/03/23 16:05:33 [notice] 8#8: start worker process 18
+2026/03/23 16:05:33 [notice] 8#8: start worker process 19
+2026/03/23 16:05:33 [notice] 8#8: start worker process 20
+2026/03/23 16:05:33 [notice] 8#8: start worker process 21
+2026/03/23 16:05:33 [notice] 8#8: start worker process 22
+2026/03/23 16:05:33 [notice] 8#8: start worker process 23
+2026/03/23 16:05:33 [notice] 8#8: start worker process 24

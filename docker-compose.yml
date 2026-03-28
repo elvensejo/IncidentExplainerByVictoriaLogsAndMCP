@@ -1,0 +1,26 @@
+services:
+  victorialogs:
+    image: victoriametrics/victoria-logs:latest
+    ports:
+      - "9428:9428"
+    command:
+      - "-retentionPeriod=1d"
+
+  webapp:
+    image: nginx:alpine
+    ports:
+      - "8080:80"
+    volumes:
+      - ./logs:/var/log/nginx
+    # Nginx пишет в stdout, мы просто перенаправим stdout в файл, который лежит в папке logs
+    command: /bin/sh -c "nginx & tail -F /var/log/nginx/access.log"
+
+  vector:
+    image: timberio/vector:0.43.0-alpine
+    volumes:
+      - ./logs:/var/log/nginx:ro
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./vector.yaml:/etc/vector/vector.yaml:ro
+    depends_on:
+      - victorialogs
+      - webapp
