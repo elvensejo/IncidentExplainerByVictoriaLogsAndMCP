@@ -1,0 +1,15 @@
+---
+deploy_components:
+  - type: "victoria_logs"
+    container_name: "victoria_logs_db"
+    deploy: true
+    image: "vladislavrkm/incident-explainer-by-victoria-logs-and-mcp"
+    host_port: 9428
+    container_port: 9428
+    data_path: "/opt/victoria-logs-data"
+  
+  - type: "mcp_server"
+    deploy: false
+
+  - type: "llm"
+    deploy: false

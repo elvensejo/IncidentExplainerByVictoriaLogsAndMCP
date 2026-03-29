@@ -1,0 +1,10 @@
+---
+- name: Project infrastructure deploy
+  hosts: target_server
+  become: yes
+
+  tasks:
+    - name: Attaching components based on all.yml 
+      ansible.builtin.include_tasks: "tasks/{{ item.type }}.yml"
+      loop: "{{ deploy_components }}"
+      when: item.deploy | bool

@@ -1,0 +1,11 @@
+---
+- name: Downloading and running the VictoriaLogs container
+  community.docker.docker_container:
+    name: "{{ item.container_name }}"
+    image: "{{ item.image }}"
+    state: started
+    restart_policy: always
+    published_ports: 
+      - "{{ item.host_port }}:{{ item.container_port }}"
+    volumes:
+      - "{{ item.data_path}}:/app/victoria-logs-data"

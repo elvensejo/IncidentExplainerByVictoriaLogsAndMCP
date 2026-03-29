@@ -1,0 +1,30 @@
+---
+- name: Server setup and installation of core dependencies
+  hosts: target_server
+  become: yes
+
+  tasks:
+    - name: Installing Python and Docker 
+      apt:
+        pkg:
+          - apt-transport-https
+          - ca-certificates
+          - curl
+          - software-properties-common
+          - python3-pip
+          - virtualenv
+          - python3-setuptools
+          - docker.io
+        state: latest
+        update_cache: true
+
+    - name: Install docker python package
+      ansible.builtin.pip:
+        name: docker
+
+    - name: Ensure Docker is running and enabled
+      ansible.builtin.service:
+        name: docker
+        state: started
+        enabled: yes
+
