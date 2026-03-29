@@ -5,6 +5,8 @@
     image: "{{ item.image }}"
     state: started
     restart_policy: always
+    networks:
+      - name: app_network
     published_ports: 
       - "{{ item.host_port }}:{{ item.container_port }}"
     volumes:

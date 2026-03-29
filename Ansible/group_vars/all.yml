@@ -3,13 +3,30 @@ deploy_components:
   - type: "victoria_logs"
     container_name: "victoria_logs_db"
     deploy: true
-    image: "vladislavrkm/incident-explainer-by-victoria-logs-and-mcp"
+    image: "vladislavrkm/incident-explainer-by-victoria-logs-and-mcp:victorialogs-custom-v1"
     host_port: 9428
     container_port: 9428
     data_path: "/opt/victoria-logs-data"
+
+  - type: "nginx"
+    container_name: "nginx_proxy"
+    deploy: true
+    image: "nginx:alpine"
+    host_port: 8080
+    container_port: 80
+    data_path: "/opt/logs"
+
+  - type: "vector"
+    container_name: "vector_shipper"
+    deploy: true
+    image: "timberio/vector:0.43.0-alpine"
+    volumes:
+      - "/opt/logs:/var/log/nginx:ro"
+      - "/opt/vector/vector.yaml:/etc/vector/vector.yaml:ro"
   
   - type: "mcp_server"
     deploy: false
 
   - type: "llm"
     deploy: false
+

@@ -1,0 +1,32 @@
+---
+- name: Ensure Nginx config directory exists
+  ansible.builtin.file:
+    path: "/opt/nginx"
+    state: directory
+    mode: '0755'
+
+- name: Ensure Nginx logs directory exists
+  ansible.builtin.file:
+    path: "{{ item.data_path }}"
+    state: directory
+    mode: '0755'
+
+- name: Copy Nginx configuration file
+  ansible.builtin.copy:
+    src: "../files/configs/nginx.conf"        
+    dest: "/opt/nginx/nginx.conf"   
+    mode: '0644'
+
+- name: Start Nginx container
+  community.docker.docker_container:
+    name: "{{ item.container_name }}"
+    image: "{{ item.image }}"
+    state: started
+    restart_policy: always
+    networks:
+      - name: app_network           
+    published_ports: 
+      - "{{ item.host_port }}:{{ item.container_port }}"
+    volumes: 
+      - "{{ item.data_path }}:/var/log/nginx"
+      - "/opt/nginx/nginx.conf:/etc/nginx/nginx.conf:ro" 

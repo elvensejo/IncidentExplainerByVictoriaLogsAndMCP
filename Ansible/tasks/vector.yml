@@ -1,0 +1,22 @@
+---
+- name: Ensure Vector config directory exists
+  ansible.builtin.file:
+    path: "/opt/vector"
+    state: directory
+    mode: '0755'
+
+- name: Copy Vector configuration file
+  ansible.builtin.copy:
+    src: "../files/vector.yaml" 
+    dest: "/opt/vector/vector.yaml" 
+    mode: '0644'
+
+- name: Start Vector container
+  community.docker.docker_container:
+    name: "{{ item.container_name }}"
+    image: "{{ item.image }}"
+    state: started
+    restart_policy: always
+    networks:
+      - name: app_network
+    volumes: "{{ item.volumes }}"

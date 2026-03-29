@@ -4,6 +4,11 @@
   become: yes
 
   tasks:
+    - name: Create custom Docker network for internal DNS
+      community.docker.docker_network:
+        name: app_network
+        state: present
+        
     - name: Attaching components based on all.yml 
       ansible.builtin.include_tasks: "tasks/{{ item.type }}.yml"
       loop: "{{ deploy_components }}"

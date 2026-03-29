@@ -15,12 +15,9 @@
           - virtualenv
           - python3-setuptools
           - docker.io
+          - python3-docker
         state: latest
         update_cache: true
-
-    - name: Install docker python package
-      ansible.builtin.pip:
-        name: docker
 
     - name: Ensure Docker is running and enabled
       ansible.builtin.service:
