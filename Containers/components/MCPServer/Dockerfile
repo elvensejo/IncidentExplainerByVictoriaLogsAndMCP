@@ -4,7 +4,7 @@ WORKDIR /server
 
 ARG SERVER_VERSION=1.8.0
 
-RUN apk add --no-cache git make && git clone https://github.com/VictoriaMetrics-Community/mcp-victorialogs.git &&
+RUN apk add --no-cache git make bash && git clone https://github.com/VictoriaMetrics-Community/mcp-victorialogs.git && \
 cd mcp-victorialogs && git checkout v${SERVER_VERSION} && CGO_ENABLED=0 GOOS=linux make build
 
 FROM alpine as os_builder
