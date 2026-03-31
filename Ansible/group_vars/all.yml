@@ -25,7 +25,11 @@ deploy_components:
       - "/opt/vector/vector.yaml:/etc/vector/vector.yaml:ro"
   
   - type: "mcp_server"
-    deploy: false
+    container_name: "mcp_server_victoria_logs"
+    deploy: true
+    image: "vladislavrkm/incident-explainer-by-victoria-logs-and-mcp:mcp-server-v1" 
+    host_port: 8000
+    container_port: 8000
 
   - type: "llm"
     deploy: false

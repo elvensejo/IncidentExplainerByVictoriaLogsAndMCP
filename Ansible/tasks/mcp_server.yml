@@ -1,1 +1,19 @@
 ---
+- name: "Deploy {{ item.type }} container"
+  community.docker.docker_container:
+    name: "{{ item.container_name }}"
+    image: "{{ item.image }}"
+    state: started
+    restart_policy: unless-stopped
+    networks:
+      - name: app_network
+    ports:
+      - "{{ item.host_port }}:{{ item.container_port }}"
+    env:
+      VL_INSTANCE_ENTRYPOINT: "http://victoria_logs_db:9428"
+      
+      MCP_SERVER_MODE: "sse"
+      
+      MCP_LISTEN_ADDR: "0.0.0.0:8000"
+      
+      MCP_SSE_ADDR: "0.0.0.0:8000"
